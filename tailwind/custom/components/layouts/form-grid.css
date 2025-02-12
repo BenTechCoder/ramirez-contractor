@@ -1,0 +1,20 @@
+.grid {
+	display: grid;
+	grid-gap: 1rem;
+}
+
+@supports (width: min(250px, 100%)) {
+	.grid {
+		grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+	}
+}
+
+.form-message {
+	grid-column: 1/-1;
+}
+
+.form-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: theme(space.m-l);
+}

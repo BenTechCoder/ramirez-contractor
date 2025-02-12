@@ -1,0 +1,203 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"typography": {
+			"fontSizes": [
+				{
+					"name": "step--2",
+					"size": "clamp(0.64rem, 0.7134rem + -0.0947vw, 0.6944rem)",
+					"slug": "step-2"
+				},
+				{
+					"name": "step--1",
+					"size": "clamp(0.8rem, 0.8449rem + -0.058vw, 0.8333rem)",
+					"slug": "step-1"
+				},
+				{
+					"name": "step--0",
+					"size": "clamp(1rem, 1rem + 0vw, 1rem)",
+					"slug": "step0"
+				},
+				{
+					"name": "step-1",
+					"size": "clamp(1.2rem, 1.1826rem + 0.087vw, 1.25rem)",
+					"slug": "step1"
+				},
+				{
+					"name": "step-2",
+					"size": "clamp(1.44rem, 1.3974rem + 0.213vw, 1.5625rem)",
+					"slug": "step2"
+				},
+				{
+					"name": "step-3",
+					"size": "clamp(1.728rem, 1.6497rem + 0.3915vw, 1.9531rem)",
+					"slug": "step3"
+				},
+				{
+					"name": "step-4",
+					"size": "clamp(2.0736rem, 1.9457rem + 0.6397vw, 2.4414rem)",
+					"slug": "step4"
+				},
+				{
+					"name": "step-5",
+					"size": "clamp(2.4883rem, 2.2923rem + 0.9799vw, 3.0518rem)",
+					"slug": "step5"
+				},
+				{
+					"name": "step-6",
+					"size": "clamp(2.986rem, 2.6977rem + 1.4412vw, 3.8147rem)",
+					"slug": "step6"
+				},
+				{
+					"name": "step-7",
+					"size": "clamp(3.5832rem, 3.1709rem + 2.0612vw, 4.7684rem)",
+					"slug": "step7"
+				},
+				{
+					"name": "step-8",
+					"size": "clamp(4.2998rem, 3.7222rem + 2.8881vw, 5.9605rem)",
+					"slug": "step8"
+				}
+			]
+		},
+		"spacing": {
+			"spacingSizes": [
+				{
+					"slug": "3xs",
+					"name": "3xs",
+					"size": "clamp(0.25rem, 0.25rem + 0vw, 0.25rem)"
+				},
+				{
+					"slug": "2xs",
+					"name": "2xs",
+					"size": "clamp(0.5rem, 0.5rem + 0vw, 0.5rem)"
+				},
+				{
+					"slug": "xs",
+					"name": "xs",
+					"size": "clamp(0.75rem, 0.75rem + 0vw, 0.75rem)"
+				},
+				{
+					"slug": "s",
+					"name": "s",
+					"size": "clamp(1rem, 1rem + 0vw, 1rem)"
+				},
+				{
+					"slug": "m",
+					"name": "m",
+					"size": "clamp(1.5rem, 1.5rem + 0vw, 1.5rem)"
+				},
+				{
+					"slug": "l",
+					"name": "l",
+					"size": "clamp(2rem, 2rem + 0vw, 2rem)"
+				},
+				{
+					"slug": "xl",
+					"name": "xl",
+					"size": "clamp(3rem, 3rem + 0vw, 3rem)"
+				},
+				{
+					"slug": "2xl",
+					"name": "2xl",
+					"size": "clamp(4rem, 4rem + 0vw, 4rem)"
+				},
+				{
+					"slug": "3xl",
+					"name": "3xl",
+					"size": "clamp(6rem, 6rem + 0vw, 6rem)"
+				},
+				{
+					"slug": "3xs-2xs",
+					"name": "3xs-2xs",
+					"size": "clamp(0.25rem, 0.163rem + 0.4348vw, 0.5rem)"
+				},
+				{
+					"slug": "2xs-xs",
+					"name": "2xs-xs",
+					"size": "clamp(0.5rem, 0.413rem + 0.4348vw, 0.75rem)"
+				},
+				{
+					"slug": "xs-s",
+					"name": "xs-s",
+					"size": "clamp(0.75rem, 0.663rem + 0.4348vw, 1rem)"
+				},
+				{
+					"slug": "s-m",
+					"name": "s-m",
+					"size": "clamp(1rem, 0.8261rem + 0.8696vw, 1.5rem)"
+				},
+				{
+					"slug": "m-l",
+					"name": "m-l",
+					"size": "clamp(1.5rem, 1.3261rem + 0.8696vw, 2rem)"
+				},
+				{
+					"slug": "l-xl",
+					"name": "l-xl",
+					"size": "clamp(2rem, 1.6522rem + 1.7391vw, 3rem)"
+				},
+				{
+					"slug": "xl-2xl",
+					"name": "xl-2xl",
+					"size": "clamp(3rem, 2.6522rem + 1.7391vw, 4rem)"
+				},
+				{
+					"slug": "2xl-3xl",
+					"name": "2xl-3xl",
+					"size": "clamp(4rem, 3.3043rem + 3.4783vw, 6rem)"
+				},
+				{
+					"slug": "s-l",
+					"name": "s-l",
+					"size": "clamp(1rem, 0.6522rem + 1.7391vw, 2rem)"
+				}
+			]
+		},
+
+		"color": {
+			"palette": [
+				{
+					"slug": "background",
+					"color": "#ffffff",
+					"name": "Background"
+				},
+				{
+					"slug": "foreground",
+					"color": "#404040",
+					"name": "Foreground"
+				},
+				{
+					"slug": "light",
+					"color": "#ffffff",
+					"name": "Light"
+				},
+				{
+					"slug": "dark",
+					"color": "#404040",
+					"name": "Dark"
+				},
+				{
+					"slug": "primary",
+					"color": "#0077B6",
+					"name": "Primary"
+				},
+				{
+					"slug": "secondary",
+					"color": "#F2D0A4",
+					"name": "Secondary"
+				},
+				{
+					"slug": "tertiary",
+					"color": "#FFC857",
+					"name": "Tertiary"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "40rem",
+			"wideSize": "60rem"
+		}
+	}
+}

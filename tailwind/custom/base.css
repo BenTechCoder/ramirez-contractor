@@ -1,0 +1,142 @@
+/**
+ * Custom styles to immediately follow Tailwind’s `base` layer
+ *
+ * “Add things like base typography styles [or] opinionated global resets.”
+ *
+ * — from https://tailwindcss.com/docs/plugins#adding-base-styles
+ */
+
+/**
+ * This uses the background and foreground colors declared in the
+ * `theme.json` file and is applied both to the frontend and in the block
+ * editor.
+*/
+
+body {
+	font-size: var(--wp--preset--font-size--step-0);
+}
+
+h1 {
+	font-size: var(--wp--preset--font-size--step-6);
+}
+
+h2 {
+	font-size: var(--wp--preset--font-size--step-5);
+}
+
+h3 {
+	font-size: var(--wp--preset--font-size--step-4);
+}
+
+h4 {
+	font-size: var(--wp--preset--font-size--step-3);
+}
+
+h1,
+h2,
+h3,
+h4 {
+	max-inline-size: 25ch;
+	@apply font-display;
+}
+
+/* Set line lengths */
+p,
+li,
+blockquote:not([class]) {
+	max-inline-size: 65ch;
+}
+
+* .text-center > p,
+li,
+blockquote:not([class]) {
+	max-inline-size: none;
+}
+
+blockquote {
+	border-inline-start: 0.5rem solid var(--color-primary);
+	padding: var(--space-m-l);
+	font-size: var(--size-step-2);
+}
+
+blockquote > * + * {
+	margin-block-start: var(--space-m-l);
+}
+
+blockquote :last-child {
+	font-family: var(--font-base);
+	font-style: normal;
+	font-size: var(--wp--preset--font-size--step-0);
+}
+
+svg {
+	block-size: 2ex;
+	inline-size: auto;
+	flex: none;
+}
+
+img, picture {
+	object-fit: cover;
+}
+
+strong {
+	font-weight: bolder;
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	width: 10%;
+	margin-block: var(--space-m-l);
+	margin-inline-start: 0;
+	background-color: var(--color-bg-accent-2);
+}
+
+[role="list"] {
+	padding: 0;
+}
+
+/* Base interactive elements */
+
+a {
+	color: currentcolor;
+	text-decoration-thickness: 0.08em;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+:focus-visible {
+	outline: 3px solid;
+	outline-offset: 0.3ch;
+}
+
+main:focus {
+	outline: none;
+}
+
+/* Base selection styles that invert whatever colours are rendered */
+::selection {
+	background-color: var(--color-text);
+	color: var(--color-bg);
+}
+
+.preload-transitions * {
+	transition: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	::after,
+	::before {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		scroll-behavior: auto !important;
+		transition-duration: 0.01ms !important;
+	}
+}

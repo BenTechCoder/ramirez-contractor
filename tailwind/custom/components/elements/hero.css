@@ -1,0 +1,5 @@
+.hero__form {
+	filter: drop-shadow(
+		5px 4px 0px var(--wp--preset--color--secondary, theme(colors.secondary))
+	);
+}

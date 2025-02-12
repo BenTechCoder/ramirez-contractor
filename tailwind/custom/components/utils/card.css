@@ -1,0 +1,64 @@
+.card {
+	background: var(--color-dark);
+	border: 4px solid var(--wp-preset-color-dark);
+	color: var(--color-light);
+	padding: 1.5em;
+	border-radius: var(--border-radius);
+	max-width: unset;
+}
+
+.card svg {
+	height: auto;
+}
+
+.card ::selection {
+	color: var(--color-dark);
+	background: var(--color-secondary);
+}
+
+.card h2 {
+	font-size: var(--size-step-3);
+}
+
+.card h2 a,
+.card h3 a {
+	text-decoration: none;
+}
+
+.card:hover,
+.card:focus-within {
+	border: 4px solid theme(colors.primary);
+}
+
+.card a {
+	text-decoration: none;
+}
+
+/* 'clickable' */
+
+.card:focus-within a:focus {
+	outline: none;
+}
+.card {
+	position: relative;
+}
+.card a:after {
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.card-grid {
+	display: grid;
+	grid-gap: 1.5em;
+	justify-items: center;
+}
+
+@supports (width: min(250px, 100%)) {
+	.card-grid {
+		grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+	}
+}
