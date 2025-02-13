@@ -13,6 +13,8 @@ get_header();
 
 <?php get_template_part('template-parts/components/hero'); ?>
 
+<!-- TODO: MAKE ALL SVG PHP COMPONENTS -->
+
 <section class="py-s-m stack">
     <div class="wrapper stack center text-center" style="--space: var(--wp--preset--spacing--s)">
         <p class="text-primary">Services</p>
@@ -67,15 +69,7 @@ get_header();
     </div>
 </section>
 
-<section class="cta cta-pattern bg-secondary py-xl-2xl">
-    <div class="wrapper stack center text-center justify-center">
-        <h2>Let’s Solve your Staffing</h2>
-        <p>Send us a Message and let us find the perfect people for your needs </p>
-        <div class="cluster justify-center">
-            <a href="" class="btn text-light bg-primary">Request Workers</a>
-            <a href="" class="btn text-light bg-primary">FAQ</a>
-        </div>
-    </div>
-</section>
+<?php get_template_part('template-parts/components/cta'); ?>
+
 
 <?php get_footer() ?>
