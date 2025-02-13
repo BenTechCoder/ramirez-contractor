@@ -11,7 +11,7 @@
 get_header();
 ?>
 
-<?php get_template_part('template-parts/components/hero') ; ?>
+<?php get_template_part('template-parts/components/hero'); ?>
 
 <section class="py-s-m stack">
     <div class="wrapper stack center text-center" style="--space: var(--wp--preset--spacing--s)">
