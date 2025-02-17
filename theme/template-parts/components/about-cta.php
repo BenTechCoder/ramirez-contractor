@@ -12,7 +12,7 @@
 
 <section class="about-cta">
     <div class="about-cta__inner py-xl-2xl">
-        <div class="about-cta__hero text-right bg-tertiary text-light p-xl-2xl">
+        <div class="about-cta__hero bg-tertiary p-xl-2xl text-right text-light">
             <div class="self-center">
                 <h2>
                     OVER 10 YEARS OF <span class="text-primary">CREATING CONECTIONS</span>
@@ -75,7 +75,7 @@
                 </defs>
             </svg>
         </div>
-        <div class="about-cta__content content stack p-m-l bg-primary text-light">
+        <div class="about-cta__content content stack bg-primary p-m-l text-light">
             <ul>
                 <li>Saving your company Time</li>
                 <li>Saving your company Money</li>

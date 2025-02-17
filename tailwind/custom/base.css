@@ -75,7 +75,8 @@ svg {
 	flex: none;
 }
 
-img, picture {
+img,
+picture {
 	object-fit: cover;
 }
 

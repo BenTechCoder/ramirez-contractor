@@ -12,7 +12,7 @@
 
 <!-- TODO: iMAGE DECIDED FROM CUSTOMIZER and default value -->
 
-<section class="hero py-xl-2xl w-full m-0 p-0 bg-cover bg-[url(http://ramirez-contractor.local/wp-content/uploads/2025/01/man-working-steel-fatory-equipment-steel-production-darker.webp)]">
+<section class="hero m-0 w-full bg-[url(http://ramirez-contractor.local/wp-content/uploads/2025/01/man-working-steel-fatory-equipment-steel-production-darker.webp)] bg-cover p-0 py-xl-2xl">
     <div class="wrapper">
         <div class="flex flex-wrap justify-evenly gap-xs-s">
             <div class="hero__text text-light">
@@ -20,7 +20,7 @@
                 <p class=" font-display text-[length:var(--wp--preset--font-size--step-6)] ">OUR WORKERS</p>
                 <h1 class="font-body text-[length:var(--wp--preset--font-size--step-1)]">Labor Contracting in North Carolina</h1>
             </div>
-            <form action="" class="hero__form shadow-xl bg-primary p-s-m hidden md:block">
+            <form action="" class="hero__form hidden bg-primary p-s-m shadow-xl md:block">
                 <div class="grid">
                     <div class="flex flex-col">
                         <label for="name" class="text-light">Name</label>
@@ -55,7 +55,7 @@
                         <label for="message" class="text-light">Message</label>
                         <textarea name="" id="message" cols="30" rows="4"></textarea>
                     </div>
-                    <button type="submit" class="btn col-[2] text-dark bg-tertiary p-2">Submit</button>
+                    <button type="submit" class="btn col-[2] bg-tertiary p-2 text-dark">Submit</button>
                 </div>
             </form>
         </div>

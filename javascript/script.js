@@ -9,9 +9,8 @@
  * https://esbuild.github.io/
  */
 
-import BurgerMenu from "./components/nav";
+import BurgerMenu from './components/nav';
 
 if ('customElements' in window) {
-    customElements.define('burger-menu', BurgerMenu);
-  }
-  
+	customElements.define('burger-menu', BurgerMenu);
+}

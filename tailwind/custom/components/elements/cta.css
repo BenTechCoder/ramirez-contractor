@@ -8,6 +8,7 @@
 	padding-top: var(--wp--preset--spacing--xl-2xl);
 	padding-bottom: var(--wp--preset--spacing--xl-2xl);
 	height: 100%;
+	/* border-radius: theme(borderRadius.md); */
 }
 
 .about-cta__divider {

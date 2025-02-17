@@ -1,4 +1,4 @@
-<div class="nav__logo flex gap-2xs-xs items-center">
+<div class="nav__logo flex items-center gap-2xs-xs">
     <?php
     if ($args['type'] === 'alternate') {
         echo wp_get_attachment_image(50, 'full');

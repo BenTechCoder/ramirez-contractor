@@ -15,7 +15,7 @@ get_header();
 
 <!-- TODO: MAKE ALL SVG PHP COMPONENTS -->
 
-<section class="py-s-m stack">
+<section class="stack py-s-m">
     <div class="wrapper stack center text-center" style="--space: var(--wp--preset--spacing--s)">
         <p class="text-primary">Services</p>
         <h2>Finding the right people for your mission</h2>
@@ -26,7 +26,7 @@ get_header();
 
     </div>
 
-    <div class="grid wrapper text-center">
+    <div class="wrapper grid text-center">
         <div class="card shadow-md">
             <img src="" alt="">
             <h3>Manufactory</h3>
