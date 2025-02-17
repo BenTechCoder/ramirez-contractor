@@ -10,14 +10,30 @@
 
 ?>
 
-<header id="masthead" class="bg-primary text-light py-s-m">
+<header id="masthead" class="bg-primary py-s-m text-light">
 
 	<div class="wrapper">
+		<div class="center eyebrow-nav">
+			<?php wp_nav_menu(
+				array(
+					'menu' => 'Eyebrow',
+					'theme_location' => 'Primary',
+					'menu_class' => 'cluster',
+					'menu_id'        => 'primary-menu',
+					'items_wrap'     => '<ul id="%1$s" class="%2$s" aria-label="submenu">%3$s</ul>',
+				)
+			); ?>
+		</div>
+	</div>
+
+	<div class="wrapper pt-s-m">
 		<div class="nav__inner">
 
 
 			<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-				<?php get_template_part('template-parts/svg/logo') ?>
+				<?php get_template_part('template-parts/assets/logo', null, array(
+					'type' => null
+				)) ?>
 			</a>
 
 			<burger-menu max-width="600">
@@ -29,7 +45,7 @@
 					wp_nav_menu(
 						array(
 							'menu' => 'main-nav',
-							'theme_location' => 'menu-1',
+							'theme_location' => 'Primary',
 							'menu_class' => '',
 							'menu_id'        => 'primary-menu',
 							'items_wrap'     => '<ul id="%1$s" class="%2$s" aria-label="submenu">%3$s</ul>',

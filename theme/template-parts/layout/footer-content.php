@@ -10,16 +10,18 @@
 
 ?>
 
-<footer id="colophon" class="py-xl-2xl">
-	<div class="center stack">
-		<?php get_template_part('template-parts/svg/logo') ?>
-		<?php if (has_nav_menu('menu-2')) : ?>
+<footer id="colophon" class="footer py-xl-2xl">
+	<div class="footer__inner center stack">
+		<?php get_template_part('template-parts/assets/logo', null, array(
+			'type' => 'alternate'
+		)) ?>
+		<?php if (has_nav_menu('Footer')) : ?>
 			<nav aria-label="<?php esc_attr_e('Footer Menu', 'ramirez-contractor'); ?>">
 				<?php
 				wp_nav_menu(
 					array(
-						'theme_location' => 'menu-2',
-						'menu_class'     => 'footer-menu',
+						'theme_location' => 'Footer',
+						'menu_class'     => 'cluster justify-center',
 						'depth'          => 1,
 					)
 				);
@@ -27,7 +29,7 @@
 			</nav>
 		<?php endif; ?>
 
-
+<!-- 
 		<?php
 		$ramirez_contractor_blog_info = get_bloginfo('name');
 		if (! empty($ramirez_contractor_blog_info)) :
@@ -36,7 +38,7 @@
 		<?php
 		endif;
 
-		?>
+		?> -->
 	</div>
 	</section>
 

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Ramirez Contractor LLC functions and definitions
  *
@@ -7,7 +8,7 @@
  * @package Ramirez_Contractor_LLC
  */
 
-if ( ! defined( 'RAMIREZ_CONTRACTOR_VERSION' ) ) {
+if (! defined('RAMIREZ_CONTRACTOR_VERSION')) {
 	/*
 	 * Set the theme’s version number.
 	 *
@@ -15,10 +16,10 @@ if ( ! defined( 'RAMIREZ_CONTRACTOR_VERSION' ) ) {
 	 * to create your production build, the value below will be replaced in the
 	 * generated zip file with a timestamp, converted to base 36.
 	 */
-	define( 'RAMIREZ_CONTRACTOR_VERSION', '0.1.0' );
+	define('RAMIREZ_CONTRACTOR_VERSION', '0.1.0');
 }
 
-if ( ! defined( 'RAMIREZ_CONTRACTOR_TYPOGRAPHY_CLASSES' ) ) {
+if (! defined('RAMIREZ_CONTRACTOR_TYPOGRAPHY_CLASSES')) {
 	/*
 	 * Set Tailwind Typography classes for the front end, block editor and
 	 * classic editor using the constant below.
@@ -42,7 +43,7 @@ if ( ! defined( 'RAMIREZ_CONTRACTOR_TYPOGRAPHY_CLASSES' ) ) {
 	);
 }
 
-if ( ! function_exists( 'ramirez_contractor_setup' ) ) :
+if (! function_exists('ramirez_contractor_setup')) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -50,19 +51,20 @@ if ( ! function_exists( 'ramirez_contractor_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function ramirez_contractor_setup() {
+	function ramirez_contractor_setup()
+	{
 
-		remove_theme_support( 'core-block-patterns' );
+		remove_theme_support('core-block-patterns');
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on Ramirez Contractor LLC, use a find and replace
 		 * to change 'ramirez-contractor' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'ramirez-contractor', get_template_directory() . '/languages' );
+		load_theme_textdomain('ramirez-contractor', get_template_directory() . '/languages');
 
 		// Add default posts and comments RSS feed links to head.
-		add_theme_support( 'automatic-feed-links' );
+		add_theme_support('automatic-feed-links');
 
 		/*
 		 * Let WordPress manage the document title.
@@ -70,24 +72,25 @@ if ( ! function_exists( 'ramirez_contractor_setup' ) ) :
 		 * hard-coded <title> tag in the document head, and expect WordPress to
 		 * provide it for us.
 		 */
-		add_theme_support( 'title-tag' );
+		add_theme_support('title-tag');
 
 		/*
 		 * Enable support for Post Thumbnails on posts and pages.
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
-		add_theme_support( 'post-thumbnails' );
+		add_theme_support('post-thumbnails');
 
 		// This theme uses wp_nav_menu() in two locations.
 		register_nav_menus(
 			array(
-				'menu-1' => __( 'Primary', 'ramirez-contractor' ),
-				'menu-2' => __( 'Footer Menu', 'ramirez-contractor' ),
+				'Eyebrow' => __('Eyebrow Menu', 'ramirez-contractor'),
+				'Primary' => __('Primary', 'ramirez-contractor'),
+				'Footer' => __('Footer Menu', 'ramirez-contractor'),
 			)
 		);
 
-		add_filter( 'should_load_remote_block_patterns', '__return_false' );
+		add_filter('should_load_remote_block_patterns', '__return_false');
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
@@ -107,35 +110,36 @@ if ( ! function_exists( 'ramirez_contractor_setup' ) ) :
 		);
 
 		// Add theme support for selective refresh for widgets.
-		add_theme_support( 'customize-selective-refresh-widgets' );
+		add_theme_support('customize-selective-refresh-widgets');
 
 		// Add support for editor styles.
-		add_theme_support( 'editor-styles' );
+		add_theme_support('editor-styles');
 
 		// Enqueue editor styles.
-		add_editor_style( 'style-editor.css' );
-		add_editor_style( 'style-editor-extra.css' );
+		add_editor_style('style-editor.css');
+		add_editor_style('style-editor-extra.css');
 
 		// Add support for responsive embedded content.
-		add_theme_support( 'responsive-embeds' );
+		add_theme_support('responsive-embeds');
 
 		// Remove support for block templates.
-		remove_theme_support( 'block-templates' );
+		remove_theme_support('block-templates');
 	}
 endif;
-add_action( 'after_setup_theme', 'ramirez_contractor_setup' );
+add_action('after_setup_theme', 'ramirez_contractor_setup');
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function ramirez_contractor_widgets_init() {
+function ramirez_contractor_widgets_init()
+{
 	register_sidebar(
 		array(
-			'name'          => __( 'Footer', 'ramirez-contractor' ),
+			'name'          => __('Footer', 'ramirez-contractor'),
 			'id'            => 'sidebar-1',
-			'description'   => __( 'Add widgets here to appear in your footer.', 'ramirez-contractor' ),
+			'description'   => __('Add widgets here to appear in your footer.', 'ramirez-contractor'),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -143,26 +147,28 @@ function ramirez_contractor_widgets_init() {
 		)
 	);
 }
-add_action( 'widgets_init', 'ramirez_contractor_widgets_init' );
+add_action('widgets_init', 'ramirez_contractor_widgets_init');
 
 /**
  * Enqueue scripts and styles.
  */
-function ramirez_contractor_scripts() {
-	wp_enqueue_style( 'ramirez-contractor-style', get_stylesheet_uri(), array(), RAMIREZ_CONTRACTOR_VERSION );
-	wp_enqueue_script( 'ramirez-contractor-script', get_template_directory_uri() . '/js/script.min.js', array(), RAMIREZ_CONTRACTOR_VERSION, true );
+function ramirez_contractor_scripts()
+{
+	wp_enqueue_style('ramirez-contractor-style', get_stylesheet_uri(), array(), RAMIREZ_CONTRACTOR_VERSION);
+	wp_enqueue_script('ramirez-contractor-script', get_template_directory_uri() . '/js/script.min.js', array(), RAMIREZ_CONTRACTOR_VERSION, true);
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
+	if (is_singular() && comments_open() && get_option('thread_comments')) {
+		wp_enqueue_script('comment-reply');
 	}
 }
-add_action( 'wp_enqueue_scripts', 'ramirez_contractor_scripts' );
+add_action('wp_enqueue_scripts', 'ramirez_contractor_scripts');
 
 /**
  * Enqueue the block editor script.
  */
-function ramirez_contractor_enqueue_block_editor_script() {
-	if ( is_admin() ) {
+function ramirez_contractor_enqueue_block_editor_script()
+{
+	if (is_admin()) {
 		wp_enqueue_script(
 			'ramirez-contractor-editor',
 			get_template_directory_uri() . '/js/block-editor.min.js',
@@ -173,49 +179,49 @@ function ramirez_contractor_enqueue_block_editor_script() {
 			RAMIREZ_CONTRACTOR_VERSION,
 			true
 		);
-		wp_add_inline_script( 'ramirez-contractor-editor', "tailwindTypographyClasses = '" . esc_attr( RAMIREZ_CONTRACTOR_TYPOGRAPHY_CLASSES ) . "'.split(' ');", 'before' );
+		wp_add_inline_script('ramirez-contractor-editor', "tailwindTypographyClasses = '" . esc_attr(RAMIREZ_CONTRACTOR_TYPOGRAPHY_CLASSES) . "'.split(' ');", 'before');
 	}
 }
-add_action( 'enqueue_block_assets', 'ramirez_contractor_enqueue_block_editor_script' );
+add_action('enqueue_block_assets', 'ramirez_contractor_enqueue_block_editor_script');
 
 add_action('admin_init', function () {
-    // Redirect any user trying to access comments page
-    global $pagenow;
-     
-    if ($pagenow === 'edit-comments.php') {
-        wp_safe_redirect(admin_url());
-        exit;
-    }
- 
-    // Remove comments metabox from dashboard
-    remove_meta_box('dashboard_recent_comments', 'dashboard', 'normal');
- 
-    // Disable support for comments and trackbacks in post types
-    foreach (get_post_types() as $post_type) {
-        if (post_type_supports($post_type, 'comments')) {
-            remove_post_type_support($post_type, 'comments');
-            remove_post_type_support($post_type, 'trackbacks');
-        }
-    }
+	// Redirect any user trying to access comments page
+	global $pagenow;
+
+	if ($pagenow === 'edit-comments.php') {
+		wp_safe_redirect(admin_url());
+		exit;
+	}
+
+	// Remove comments metabox from dashboard
+	remove_meta_box('dashboard_recent_comments', 'dashboard', 'normal');
+
+	// Disable support for comments and trackbacks in post types
+	foreach (get_post_types() as $post_type) {
+		if (post_type_supports($post_type, 'comments')) {
+			remove_post_type_support($post_type, 'comments');
+			remove_post_type_support($post_type, 'trackbacks');
+		}
+	}
 });
- 
+
 // Close comments on the front-end
 add_filter('comments_open', '__return_false', 20, 2);
 add_filter('pings_open', '__return_false', 20, 2);
- 
+
 // Hide existing comments
 add_filter('comments_array', '__return_empty_array', 10, 2);
- 
+
 // Remove comments page in menu
 add_action('admin_menu', function () {
-    remove_menu_page('edit-comments.php');
+	remove_menu_page('edit-comments.php');
 });
- 
+
 // Remove comments links from admin bar
 add_action('init', function () {
-    if (is_admin_bar_showing()) {
-        remove_action('admin_bar_menu', 'wp_admin_bar_comments_menu', 60);
-    }
+	if (is_admin_bar_showing()) {
+		remove_action('admin_bar_menu', 'wp_admin_bar_comments_menu', 60);
+	}
 });
 
 /**
@@ -224,11 +230,12 @@ add_action('init', function () {
  * @param array $settings TinyMCE settings.
  * @return array
  */
-function ramirez_contractor_tinymce_add_class( $settings ) {
+function ramirez_contractor_tinymce_add_class($settings)
+{
 	$settings['body_class'] = RAMIREZ_CONTRACTOR_TYPOGRAPHY_CLASSES;
 	return $settings;
 }
-add_filter( 'tiny_mce_before_init', 'ramirez_contractor_tinymce_add_class' );
+add_filter('tiny_mce_before_init', 'ramirez_contractor_tinymce_add_class');
 
 /**
  * Custom template tags for this theme.
