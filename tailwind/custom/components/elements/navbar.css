@@ -43,7 +43,7 @@
 }
 
 .nav a:hover {
-	color: var(--color-dark);
+	color: var(--wp--preset--color--tertiary);
 }
 
 .burger-menu__trigger {
@@ -88,7 +88,7 @@
 	width: 2rem;
 	height: 2rem; /* Nice big tap target */
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 	background: transparent;
 	border: none;
 	cursor: pointer;
@@ -103,6 +103,7 @@
 	height: 100%;
 	visibility: hidden;
 	opacity: 0;
+	z-index: 1;
 	background: var(--wp--preset--color--dark);
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
@@ -198,8 +199,12 @@
 	.eyebrow-nav ul {
 		justify-content: space-evenly;
 		/* Fixes overflow issue on mobile and adds possibility for more icons in future */
+		overflow-wrap: normal;
 		overflow: scroll;
+		scrollbar-width: none;
+		scrollbar-color: transparent;
 	}
+
 	.eyebrow-nav a {
 		visibility: hidden;
 		width: 0;

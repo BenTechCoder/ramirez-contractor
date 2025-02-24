@@ -12,11 +12,13 @@
 
 <footer id="colophon" class="footer py-xl-2xl">
 	<div class="footer__inner center stack">
-		<?php get_template_part('template-parts/assets/logo', null, array(
-			'type' => 'alternate'
-		)) ?>
+		<a href="/">
+			<?php get_template_part('template-parts/assets/logo', null, array(
+				'type' => 'alternate'
+			)) ?>
+		</a>
 		<?php if (has_nav_menu('Footer')) : ?>
-			<nav aria-label="<?php esc_attr_e('Footer Menu', 'ramirez-contractor'); ?>">
+			<nav aria-label="<?php esc_attr_e('Footer Menu', 'ramirez-contractor'); ?>" class="nav center">
 				<?php
 				wp_nav_menu(
 					array(
@@ -29,7 +31,7 @@
 			</nav>
 		<?php endif; ?>
 
-<!-- 
+		<!-- 
 		<?php
 		$ramirez_contractor_blog_info = get_bloginfo('name');
 		if (! empty($ramirez_contractor_blog_info)) :
