@@ -15,8 +15,21 @@
         <h2>Let’s Solve your Staffing</h2>
         <p>Send us a Message and let us find the perfect people for your needs </p>
         <div class="cluster justify-center">
-            <a href="" class="btn bg-primary text-light">Request Workers</a>
-            <a href="" class="btn bg-primary text-light">FAQ</a>
+            <?php
+            if (is_front_page()) {
+                echo '<a href="/contact/" class="btn bg-primary text-light">Request Workers</a>';
+            }
+            ?>
+            <?php
+            if (!is_page('faq')) {
+                echo '<a href="/faq/" class="btn bg-primary text-light">FAQ</a>';
+            }
+            ?>
         </div>
+        <?php
+        if (!is_front_page()) {
+            get_template_part("template-parts/components/contact-form");
+        }
+        ?>
     </div>
 </section>
