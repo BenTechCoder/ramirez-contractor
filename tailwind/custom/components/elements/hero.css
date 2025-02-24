@@ -1,5 +1,22 @@
-.hero__form {
-	filter: drop-shadow(
-		5px 4px 0px var(--wp--preset--color--secondary, theme(colors.secondary))
-	);
+[data-hero="grid-background"] {
+	display: grid;
+	align-items: center;
+}
+
+[data-hero="grid-background"] > * {
+	grid-row: 1;
+	grid-column: 1;
+	max-height: max(50vh, 25rem);
+}
+
+[data-hero="grid-background"] img {
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+	filter: brightness(0.4);
+	object-fit: cover;
+}
+
+.hero__content {
+	z-index: 1;
 }

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying all pages
  *
@@ -13,22 +14,22 @@
 
 get_header();
 ?>
+<section id="primary" class="py-xl-2xl">
+	<main id="main">
 
-	<section id="primary">
-		<main id="main">
+		<?php
+		/* Start the Loop */
+		while (have_posts()) :
+			the_post();
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+			get_template_part('template-parts/content/content', 'page');
 
-				get_template_part( 'template-parts/content/content', 'page' );
+		endwhile; // End of the loop.
+		?>
 
-			endwhile; // End of the loop.
-			?>
-
-		</main><!-- #main -->
-	</section><!-- #primary -->
+	</main><!-- #main -->
+	<?php get_template_part("template-parts/components/cta"); ?>
+</section><!-- #primary -->
 
 <?php
 get_footer();

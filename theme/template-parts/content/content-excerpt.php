@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" class="card stack">
 
 	<header class="entry-header">
 		<?php
@@ -25,9 +25,5 @@
 	<div <?php ramirez_contractor_content_class( 'entry-content' ); ?>>
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php ramirez_contractor_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 
 </article><!-- #post-${ID} -->

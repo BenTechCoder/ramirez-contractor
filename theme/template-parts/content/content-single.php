@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template part for displaying single posts
  *
@@ -11,39 +12,22 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
+	<header class="hero" data-hero="grid-background">
+		<div class="hero__content wrapper stack center py-l-xl text-center text-light">
+			<?php the_title('<h1 class="hero__title">', '</h1>'); ?>
+			<?php the_excerpt(); ?>
+			<div class="center flex gap-2">
+				<a href="/contact" class="btn bg-primary text-light">Contact</a>
+				<a href="<?php echo get_post_type_archive_link(get_post_type()); ?>" class="btn bg-light text-dark">See all <?php echo get_post_type(); ?></a>
+			</div>
+		</div>
+		<?php the_post_thumbnail(); ?>
 	</header><!-- .entry-header -->
 
-	<?php ramirez_contractor_post_thumbnail(); ?>
-
-	<div <?php ramirez_contractor_content_class( 'entry-content' ); ?>>
+	<div class="wrapper prose my-l-xl">
 		<?php
-		the_content(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers. */
-					__( 'Continue reading<span class="sr-only"> "%s"</span>', 'ramirez-contractor' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				get_the_title()
-			)
-		);
-
-		wp_link_pages(
-			array(
-				'before' => '<div>' . __( 'Pages:', 'ramirez-contractor' ),
-				'after'  => '</div>',
-			)
-		);
+		the_content();
 		?>
 	</div><!-- .entry-content -->
-
-	
 
 </article><!-- #post-${ID} -->

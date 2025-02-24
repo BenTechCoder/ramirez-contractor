@@ -1,8 +1,10 @@
 .btn {
 	@apply rounded-md;
 	@apply p-2;
+	border-bottom: 4px solid transparent;
+	border-right: 4px solid transparent;
 	transition-property: border;
-	transition-duration: 0.3s;
+	transition-duration: 0.5s;
 	transition-timing-function: ease-in-out;
 	cursor: pointer;
 }
