@@ -2,9 +2,20 @@
 	background: var(--color-dark);
 	border: 4px solid var(--wp-preset-color-dark);
 	color: var(--color-light);
-	padding: 1.5em;
 	border-radius: var(--border-radius);
 	max-width: unset;
+}
+
+.card__content {
+	padding: theme(spacing.m-l);
+}
+
+.card img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	max-height: 15rem;
+	aspect-ratio: 3/2;
 }
 
 .card svg {
@@ -12,12 +23,13 @@
 }
 
 .card ::selection {
-	color: var(--color-dark);
-	background: var(--color-secondary);
+	color: var(--wp-preset-color-light);
+	background: var(--wp-preset-color-dark);
 }
 
-.card h2 {
-	font-size: var(--size-step-3);
+.card h2,
+h3 {
+	font-size: var(--wp--preset--font-size--step-3);
 }
 
 .card h2 a,
@@ -49,16 +61,4 @@
 	position: absolute;
 	right: 0;
 	top: 0;
-}
-
-.card-grid {
-	display: grid;
-	grid-gap: 1.5em;
-	justify-items: center;
-}
-
-@supports (width: min(250px, 100%)) {
-	.card-grid {
-		grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
-	}
 }

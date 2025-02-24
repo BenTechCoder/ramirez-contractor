@@ -39,7 +39,7 @@ if (! defined('RAMIREZ_CONTRACTOR_TYPOGRAPHY_CLASSES')) {
 	 */
 	define(
 		'RAMIREZ_CONTRACTOR_TYPOGRAPHY_CLASSES',
-		'prose prose-neutral max-w-none prose-a:text-primary'
+		'prose prose-neutral max-w-none prose-a:text-primary stack'
 	);
 }
 
@@ -246,3 +246,5 @@ require get_template_directory() . '/inc/template-tags.php';
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
+
+
