@@ -11,7 +11,7 @@
 ?>
 
 <section class="about-cta">
-    <div class="about-cta__inner py-xl-2xl">
+    <div class="about-cta__inner">
         <div class="about-cta__hero bg-tertiary p-xl-2xl text-right text-light">
             <div class="self-center">
                 <h2>

@@ -8,10 +8,18 @@
  * @package Ramirez_Contractor_LLC
  */
 
+/**
+ * TODO: get google maps embed for the service area
+ * TODO: make pattern for the about page for profiles
+ * TODO: fix underlines in h2 link for about-cta.php 
+ */
+
 get_header();
 ?>
 
 <?php get_template_part('template-parts/components/hero'); ?>
+
+<?php get_template_part('template-parts/components/about-profile'); ?>
 
 
 <section class="stack py-s-m">
@@ -33,23 +41,7 @@ get_header();
 
 <?php get_template_part('template-parts/components/about-cta'); ?>
 
-<section class="service-area bg-dark text-light">
-    <div class="service-area__inner">
-        <article class="service-area__content content gutter stack center py-xl-2xl">
-            <h2>Serving North Carolina</h2>
-            <p>Quisque tristique accumsan tellus. Praesent rhoncus fermentum venenatis. Integer diam metus, dictum non tortor non, placerat iaculis justo. Sed eleifend aliquam aliquam. Quisque et sem nisl. </p>
-            <ul class="cluster" role="list">
-                <li>Location, NC</li>
-                <li>Location, NC</li>
-                <li>Location, NC</li>
-                <li>Location, NC</li>
-                <li>Location, NC</li>
-                <li>Location, NC</li>
-            </ul>
-        </article>
-        <?php echo wp_get_attachment_image(35, 'full'); ?>
-    </div>
-</section>
+<?php get_template_part('template-parts/components/service-area-cta'); ?>
 
 <?php get_template_part('template-parts/components/cta'); ?>
 
