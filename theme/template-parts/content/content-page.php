@@ -14,7 +14,11 @@
 	<header class="hero" data-hero="grid-background">
 		<div class="hero__content wrapper stack center py-l-xl text-center text-dark">
 			<?php the_title('<h1 class="hero__title">', '</h1>'); ?>
-			<?php the_excerpt(); ?>
+			<?php
+			if (the_excerpt()) {
+				the_excerpt();
+			}
+			?>
 			<div class="center flex gap-2">
 				<?php
 				if (is_page('About')) {
