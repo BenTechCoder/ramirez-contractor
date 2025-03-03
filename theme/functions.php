@@ -115,6 +115,9 @@ if (! function_exists('ramirez_contractor_setup')) :
 		// Add support for editor styles.
 		add_theme_support('editor-styles');
 
+		// Add excerpts to all page post types
+		add_post_type_support('page', 'excerpt');
+
 		// Enqueue editor styles.
 		add_editor_style('style-editor.css');
 		add_editor_style('style-editor-extra.css');
@@ -246,5 +249,3 @@ require get_template_directory() . '/inc/template-tags.php';
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
-
-
