@@ -13,3 +13,16 @@
 	padding-left: 1rem;
 	padding-right: 1rem;
 }
+
+[data-wrapper="content"] {
+	width: 90vw;
+	width: clamp(10rem, 80vw, 90rem);
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+[data-wrapper="content"] * {
+	max-width: 80ch;
+}
