@@ -1,0 +1,10 @@
+.profile {
+	border-radius: theme(borderRadius.md);
+}
+
+.profile img {
+	max-height: 35rem;
+	width: 100%;
+	border-radius: theme(borderRadius.md);
+	aspect-ratio: 3/4;
+}
