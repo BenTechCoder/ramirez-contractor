@@ -15,7 +15,7 @@
 		<div class="hero__content wrapper stack center py-l-xl text-center text-dark">
 			<?php the_title('<h1 class="hero__title">', '</h1>'); ?>
 			<?php
-			if (the_excerpt()) {
+			if (has_excerpt()) {
 				the_excerpt();
 			}
 			?>
