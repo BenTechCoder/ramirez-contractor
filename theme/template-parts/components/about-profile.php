@@ -1,7 +1,7 @@
-<article class="profile switcher items-center cta-pattern bg-primary text-light">
+<article class="profile switcher cta-pattern items-center bg-primary text-light">
     <?php echo $args['image'] ?>
-    <div class="stack self-center p-xl-2xl bg-dark text-light">
-        <h3 class="underline text-light">
+    <div class="stack self-center bg-dark p-xl-2xl text-light">
+        <h3 class="text-light underline">
             <?php echo $args['name']; ?>
         </h3>
         <?php the_content() ?>

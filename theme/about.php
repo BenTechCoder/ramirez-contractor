@@ -71,6 +71,7 @@ get_header();
 
 </article><!-- #post-${ID} -->
 
-<?php get_template_part("template-parts/components/cta"); ?>
+<?php get_template_part("template-parts/cta/cta", 'alt-1'); ?>
+
 
 <?php get_footer(); ?>
