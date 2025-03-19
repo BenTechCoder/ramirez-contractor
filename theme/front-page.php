@@ -36,7 +36,7 @@ get_header();
         <?php get_template_part('/template-parts/components/services-grid'); ?>
 
 
-        <div class="wrapper center"> <?php get_template_part('template-parts/assets/services-divider', '', array('rotate' => true)); ?></div>
+        <div class=" stack wrapper center"> <?php get_template_part('template-parts/assets/services-divider', '', array('rotate' => true)); ?></div>
     </div>
 
 </section>

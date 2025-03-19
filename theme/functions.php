@@ -249,3 +249,16 @@ require get_template_directory() . '/inc/template-tags.php';
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
+
+function ramirez_contractor_customize_register($wp_customize)
+{
+	// Add customizer settings and controls here
+
+	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_image', array(
+		'label' => __('Hero Image', 'mytheme'),
+		'section' => 'example_section',
+		'settings' => 'example_image',
+	)));
+}
+
+add_action('customize_register', 'ramirez_contractor_customize_register');
