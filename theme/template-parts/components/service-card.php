@@ -11,7 +11,7 @@
 ?>
 
 <li class="card stack bg-light text-dark shadow-md">
-    <img src=<?php echo $args['image']; ?>>
+    <?php echo $args['image'] ?>
     <div class="card__content stack center">
         <h3><a href=<?php echo esc_url(get_permalink(get_the_ID())); ?>>
                 <?php

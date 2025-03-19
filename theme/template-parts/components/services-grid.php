@@ -33,7 +33,7 @@
 
             $service_name = (get_post_meta($post->ID, 'service_name', true)) ? get_post_meta($post->ID, 'service_name', true) : get_the_title();
 
-            $service_image = (get_post_meta($post->ID, 'service_image', true)) ? get_post_meta($post->ID, 'service_icon', true) : get_the_post_thumbnail_url($post, 'full');
+            $service_image = (get_post_meta($post->ID, 'service_image', true)) ? get_post_meta($post->ID, 'service_icon', true) : get_the_post_thumbnail($post, 'full');
 
             $service_image__alt = '';
 
