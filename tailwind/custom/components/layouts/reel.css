@@ -1,0 +1,46 @@
+.reel {
+	display: flex;
+	block-size: auto;
+	overflow-x: auto;
+	overflow-y: hidden;
+	scrollbar-color: var(--wp--preset--color--primary)
+		var(--wp--preset--color--tertiary);
+}
+
+.reel::-webkit-scrollbar {
+	block-size: 1rem;
+}
+
+.reel::-webkit-scrollbar-track {
+	background-color: theme(colors.primary);
+}
+
+.reel::-webkit-scrollbar-thumb {
+	background-color: var(--wp--preset--color--primary);
+	background-image: linear-gradient(
+		#000 0,
+		#000 0.25rem,
+		#fff 0.25rem,
+		#fff 0.75rem,
+		#000 0.75rem
+	);
+}
+
+.reel > * {
+	flex: 0 0 auto;
+	max-width: 85vw;
+}
+
+.reel > img {
+	block-size: 100%;
+	flex-basis: auto;
+	width: auto;
+}
+
+.reel > * + * {
+	margin-inline-start: var(--wp--preset--spacing--xl-2xl, 2rem);
+}
+
+.reel.overflowing {
+	margin-block-end: 1rem;
+}

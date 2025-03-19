@@ -1,7 +1,7 @@
 .switcher {
 	display: flex;
 	flex-wrap: wrap;
-	gap: var(--wp--preset--spacing--m);
+	gap: var(--switcher-space, --wp--preset--spacing--m);
 }
 
 .switcher > * {
