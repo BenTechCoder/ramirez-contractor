@@ -19,7 +19,7 @@
                 <h2>YOU’RE IN GOOD COMPANY</h2>
                 <p>Etiam fermentum metus vitae maximus fringilla. Sed non tellus pharetra, vestibulum velit et, fringilla ante. Donec suscipit libero nisl, eget tempor erat tincidunt et. Fusce molestie elit tincidunt, malesuada massa nec, placerat ex. Nulla luctus ante gravida mauris vehicula finibus. </p>
             </div>
-            <div class="testimonial__companies cluster py-xs-s">
+            <div class="testimonial__companies cluster justify-center py-xs-s bg-light bg-opacity-50">
                 <?php
                 // Retrieve the value of a specific option
                 $company_logos = get_option('testimonial_companies_company_image');
