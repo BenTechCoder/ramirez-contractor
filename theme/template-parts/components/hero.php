@@ -12,7 +12,7 @@
 
 <!-- TODO: iMAGE DECIDED FROM CUSTOMIZER and default value -->
 
-<section class="hero m-0 w-full bg-[url(http://ramirez-contractor.local/wp-content/uploads/2025/01/man-working-steel-fatory-equipment-steel-production-darker.webp)] bg-cover p-0 py-xl-2xl">
+<section class="hero m-0 w-full bg-cover p-0 py-xl-2xl" tyle="background-image:url(<?php echo get_parent_theme_file_uri("/assets/images/man-working-steel-fatory-equipment-steel-production-darker.webp") ?>);">
     <div class="wrapper">
         <div class="flex flex-wrap justify-evenly gap-xs-s">
             <div class="hero__text text-light">
