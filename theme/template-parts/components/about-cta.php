@@ -15,7 +15,7 @@
         <div class="about-cta__hero bg-tertiary p-xl-2xl text-right text-light">
             <div class="self-center">
                 <h2>
-                    <a href="/about/"> OVER 10 YEARS OF <span class="text-primary">CREATING CONECTIONS</span></a>
+                    <a href="/about/" class="underline"> OVER 10 YEARS OF <span class="text-primary underline">CREATING CONECTIONS</span></a>
                 </h2>
             </div>
         </div>
