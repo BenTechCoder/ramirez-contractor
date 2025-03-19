@@ -25,7 +25,7 @@ get_header();
 		?>
 	</div>
 
-	<?php get_template_part("template-parts/components/cta"); ?>
+	<?php get_template_part("template-parts/cta/cta", 'alt-2'); ?>
 </section><!-- #primary -->
 
 <?php

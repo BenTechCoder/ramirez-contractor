@@ -14,7 +14,7 @@
 
 get_header();
 ?>
-<section id="primary" class="py-xl-2xl">
+<section id="primary" class="pb-xl-2xl">
 	<main id="main">
 
 		<?php
@@ -28,7 +28,7 @@ get_header();
 		?>
 
 	</main><!-- #main -->
-	<?php get_template_part("template-parts/components/cta"); ?>
+	<?php get_template_part("template-parts/cta/cta", 'alt-2'); ?>
 </section><!-- #primary -->
 
 <?php
