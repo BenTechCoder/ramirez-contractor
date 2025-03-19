@@ -12,7 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<header class="hero" data-hero="grid-background">
-		<div class="hero__content wrapper stack center py-l-xl text-center text-dark">
+		<div class="hero__content wrapper stack center py-xl-2xl text-center <?php echo (has_post_thumbnail() ? 'text-light' : 'text-dark') ?>">
 			<?php the_title('<h1 class="hero__title">', '</h1>'); ?>
 			<?php
 			if (has_excerpt()) {
@@ -33,13 +33,21 @@
 				<a href="/services/" class="btn bg-dark text-light">See all Services</a>
 			</div>
 		</div>
-		<?php the_post_thumbnail(); ?>
+		<?php
+		if (has_post_thumbnail()) {
+			the_post_thumbnail();
+		} ?>
 	</header><!-- .entry-header -->
 
-	<div class="wrapper prose my-l-xl">
+	<div class="wrapper prose my-l-xl <?php echo (is_page('Service Area') ? 'switcher items-center' : '') ?>">
 		<?php
 		the_content();
 		?>
+
+		<?php if (is_page('Service Area')) {
+			echo '<iframe src="https://www.google.com/maps/d/embed?mid=18V76QHPQPwTBD-Bd9QJxxQROWe39DfY&hl=en&ehbc=2E312F" height="600" loading="lazy"></iframe>';
+		} ?>
+
 	</div><!-- .entry-content -->
 
 </article><!-- #post-${ID} -->
