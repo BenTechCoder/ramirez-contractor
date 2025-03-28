@@ -28,7 +28,11 @@ get_header();
 		?>
 
 	</main><!-- #main -->
-	<?php get_template_part("template-parts/cta/cta", 'alt-2'); ?>
+	<?php
+	$post_id = get_the_ID();
+	$cta_value = get_post_meta($post_id, 'cta_type', true);
+	get_template_part("template-parts/cta/cta", $cta_value);
+	?>
 </section><!-- #primary -->
 
 <?php
