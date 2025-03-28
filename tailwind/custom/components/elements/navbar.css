@@ -207,6 +207,7 @@
 	.eyebrow-nav a {
 		visibility: hidden;
 		width: 0;
+		height: 2rem;
 		border-right: solid var(--wp--preset--color--light) 1px;
 		padding-right: 1em;
 		display: block;
