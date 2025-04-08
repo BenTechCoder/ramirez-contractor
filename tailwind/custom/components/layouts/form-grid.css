@@ -18,3 +18,8 @@
 	grid-template-columns: 1fr 1fr;
 	gap: theme(space.m-l);
 }
+
+.contact__form input,
+.contact__form textarea {
+	width: 100%;
+}
