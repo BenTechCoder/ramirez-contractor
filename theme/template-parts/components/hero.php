@@ -14,7 +14,7 @@
 
 <section class="hero m-0 w-full bg-cover p-0 py-xl-2xl" style="background-image:url(<?php echo get_parent_theme_file_uri("/assets/images/man-working-steel-fatory-equipment-steel-production-darker.webp") ?>);">
     <div class="wrapper">
-        <div class="flex flex-wrap justify-evenly gap-xs-s">
+        <div class="switcher gap-xs-s">
             <div class="hero__text text-light">
                 <p class=" font-display text-[length:var(--wp--preset--font-size--step-6)] "><span class="text-secondary">YOUR MISSION.</span></p>
                 <p class=" font-display text-[length:var(--wp--preset--font-size--step-6)] ">OUR WORKERS</p>

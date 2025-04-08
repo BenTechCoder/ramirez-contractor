@@ -262,3 +262,5 @@ function ramirez_contractor_customize_register($wp_customize)
 }
 
 add_action('customize_register', 'ramirez_contractor_customize_register');
+
+add_filter('wpcf7_autop_or_not', '__return_false');

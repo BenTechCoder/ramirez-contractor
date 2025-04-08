@@ -28,10 +28,12 @@
 		<?php the_post_thumbnail(); ?>
 	</header><!-- .entry-header -->
 
-	<div class="wrapper prose my-l-xl">
-		<?php
-		the_content();
-		?>
-	</div><!-- .entry-content -->
+	<div class="testimonial-pattern">
+		<div class="wrapper prose py-l-xl bg-light bg-opacity-50">
+			<?php
+			the_content();
+			?>
+		</div><!-- .entry-content -->
+	</div>
 
 </article><!-- #post-${ID} -->

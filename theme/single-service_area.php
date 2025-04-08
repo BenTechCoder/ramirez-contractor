@@ -8,26 +8,23 @@
  * @package Ramirez_Contractor_LLC
  */
 
-/**
- * ⌛ get google maps embed for the service area 
-  TODO: Set all SEO stuff and OG Image
-  TODO: add customizer for Front Page text
-  TODO: Look into load-in animations with css
-  TODO: transition the service-area to be a custom post type for SEO reasons
- */
-
 get_header();
 ?>
 
-<?php get_template_part('template-parts/components/hero'); ?>
+<?php get_template_part('/template-parts/components/header'); ?>
 
+<div class="wrapper prose my-l-xl center">
+		<?php
+		the_content();
+		?>
 
+	</div><!-- .entry-content -->
 
 <section class="stack py-s-m">
     <div class="wrapper stack center text-center" style="--space: var(--wp--preset--spacing--s)">
         <p class="text-primary">Services</p>
         <h2>Finding the right people for your mission</h2>
-        <p>Ramirez Contractor LLC specializes in providing tailored labor solutions to meet your business needs. From skilled workers to general labor, we connect you with reliable professionals who get the job done right.</p>
+        <p>Etiam fermentum metus vitae maximus fringilla. Sed non tellus pharetra, vestibulum velit et, fringilla ante. Donec suscipit libero nisl, eget tempor erat tincidunt et. Fusce molestie elit tincidunt, malesuada massa nec, placerat ex. Nulla luctus ante gravida mauris vehicula finibus. </p>
 
         <?php get_template_part('template-parts/assets/services-divider', '', array('rotate' => false)); ?>
 
@@ -46,9 +43,7 @@ get_header();
 
 <?php get_template_part('template-parts/components/about-cta'); ?>
 
-<?php get_template_part('template-parts/components/service-area-cta'); ?>
-
-<?php get_template_part('template-parts/cta/cta'); ?>
+<?php get_template_part('template-parts/cta/cta', 'alt-1'); ?>
 
 
 <?php get_footer() ?>
