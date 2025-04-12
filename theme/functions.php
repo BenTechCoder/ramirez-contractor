@@ -253,12 +253,27 @@ require get_template_directory() . '/inc/template-functions.php';
 function ramirez_contractor_customize_register($wp_customize)
 {
 	// Add customizer settings and controls here
+	$wp_customize->add_section('testimonial_section', array(
+		'title'      => 'Site Settings',
+		'priority'   => 20,
+	));
 
-	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_image', array(
-		'label' => __('Hero Image', 'mytheme'),
-		'section' => 'example_section',
-		'settings' => 'example_image',
-	)));
+	$wp_customize->add_setting('testimonial_section_display', array(
+		'default'     => true,
+		'transport'   => 'refresh',
+	));
+
+	$wp_customize->add_control('site_section_display', array(
+		'label' => 'Testimonials enabled',
+		'section' => 'testimonial_section',
+		'settings' => 'testimonial_section_display',
+		'default' => 'Hide',
+		'type' => 'radio',
+		'choices' => array(
+			'show' => 'Show',
+			'hide' => 'Hide',
+		),
+	));
 }
 
 add_action('customize_register', 'ramirez_contractor_customize_register');
