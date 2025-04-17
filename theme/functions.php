@@ -127,6 +127,10 @@ if (! function_exists('ramirez_contractor_setup')) :
 
 		// Remove support for block templates.
 		remove_theme_support('block-templates');
+
+		// Add support for custom logos
+		add_theme_support('custom-logo');
+
 	}
 endif;
 add_action('after_setup_theme', 'ramirez_contractor_setup');
@@ -274,6 +278,20 @@ function ramirez_contractor_customize_register($wp_customize)
 			'hide' => 'Hide',
 		),
 	));
+
+	// Hero Text and Image
+
+
+
+	// Services intro
+
+
+	// Testimonials intro text
+
+	// About CTA text
+
+	// Service Area CTA
+
 }
 
 add_action('customize_register', 'ramirez_contractor_customize_register');
