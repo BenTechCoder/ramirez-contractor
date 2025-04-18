@@ -9,7 +9,7 @@
  */
 
 ?>
-<div class="contact__form bg-primary p-s-m shadow-xl">
+<!-- <div class="contact__form bg-primary p-s-m shadow-xl">
     <form action="" class="grid">
         <div class="flex flex-col">
             <label for="name" class="text-light">Name</label>
@@ -46,4 +46,6 @@
         </div>
         <button type="submit" class="btn bg-tertiary p-2 text-dark md:col-[2]">Submit</button>
     </form>
-</div>
+</div> -->
+
+<?php echo do_shortcode('[contact-form-7 id="ae353ee" title="Contact form"]'); ?>

@@ -17,7 +17,7 @@
             <div class="wrapper stack" style="--space: var(--wp--preset--spacing--s)">
                 <p class="text-primary">Testimonials</p>
                 <h2>YOU’RE IN GOOD COMPANY</h2>
-                <p>Etiam fermentum metus vitae maximus fringilla. Sed non tellus pharetra, vestibulum velit et, fringilla ante. Donec suscipit libero nisl, eget tempor erat tincidunt et. Fusce molestie elit tincidunt, malesuada massa nec, placerat ex. Nulla luctus ante gravida mauris vehicula finibus. </p>
+                <p>Join the many satisfied businesses who trust Ramirez Contractor LLC to meet their labor needs. Our commitment to reliability, professionalism, and top-tier service ensures every project is completed with excellence. See why our clients choose us time and time again.</p>
             </div>
             <div class="testimonial__companies cluster justify-center py-xs-s">
                 <?php

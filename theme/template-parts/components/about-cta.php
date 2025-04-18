@@ -28,8 +28,8 @@
                 <li>Saving your company Money</li>
                 <li>Locally Owned and Operated</li>
             </ul>
-            <p>Etiam fermentum metus vitae maximus fringilla. Sed non tellus pharetra, vestibulum velit et, fringilla ante. Donec suscipit libero nisl, eget tempor erat tincidunt et. Fusce molestie elit tincidunt, malesuada massa nec, placerat ex. Nulla luctus ante gravida mauris vehicula finibus. </p>
-            <p>Quisque tristique accumsan tellus. Praesent rhoncus fermentum venenatis. Integer diam metus, dictum non tortor non, placerat iaculis justo. Sed eleifend aliquam aliquam. Quisque et sem nisl. </p>
+            <p>At Ramirez Contractor LLC, we are proud to have been serving North Carolina for over a decade. As a locally owned and operated business, we’ve built strong relationships in the community and earned the trust of countless clients.</p>
+            <p>With experience in skilled and general labor, we specialize in connecting businesses with reliable, compliant, and efficient workers. Let us help your business thrive by saving you time, saving you money, and delivering exceptional results.</p>
         </div>
     </div>
 </section>

@@ -9,8 +9,6 @@
  */
 
 /**
- * ⌛ get google maps embed for the service area 
-  TODO: add customizer for Front Page text
   TODO: Look into load-in animations with css
  */
 
@@ -20,6 +18,7 @@ get_header();
 <?php get_template_part('template-parts/components/hero'); ?>
 
 <?php get_template_part('template-parts/components/services-cta'); ?>
+
 
 <?php get_template_part('template-parts/components/testimonials'); ?>
 
