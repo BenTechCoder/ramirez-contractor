@@ -1,0 +1,1 @@
+<a href=<?php echo $args['website']; ?> ><?php echo wp_get_attachment_image($args['logo'], 'medium'); ?></a>
