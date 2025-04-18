@@ -28,13 +28,10 @@
 
 	<div class="wrapper pt-s-m">
 		<div class="nav__inner">
-
-
-			<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-				<?php get_template_part('template-parts/assets/logo', null, array(
-					'type' => null
-				)) ?>
-			</a>
+			
+			
+				<?php get_template_part('template-parts/assets/logo') ?>
+			
 
 			<burger-menu max-width="600">
 				<nav id="site-navigation"

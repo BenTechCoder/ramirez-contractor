@@ -10,13 +10,9 @@
 
 ?>
 
-<footer id="colophon" class="footer py-xl-2xl">
+<footer id="colophon" class="footer py-xl-2xl bg-dark text-light">
 	<div class="footer__inner center stack">
-		<a href="/">
-			<?php get_template_part('template-parts/assets/logo', null, array(
-				'type' => 'alternate'
-			)) ?>
-		</a>
+			<?php get_template_part('template-parts/assets/logo') ?>
 		<?php if (has_nav_menu('Footer')) : ?>
 			<nav aria-label="<?php esc_attr_e('Footer Menu', 'ramirez-contractor'); ?>" class="nav center">
 				<?php
