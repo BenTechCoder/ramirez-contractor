@@ -52,7 +52,6 @@
                 ?>
             </ul>
         </article>
-        <!-- TODO: cUSTOMIZER FOR IMAGE BELOW -->
         <?php echo wp_get_attachment_image(35, 'full'); ?>
     </div>
 </section>

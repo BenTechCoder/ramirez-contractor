@@ -10,8 +10,6 @@
 
 ?>
 
-<!-- TODO: Customizer dropdown choose per-page which cta to use -->
-
 <section class="cta cta-pattern bg-secondary py-xl-2xl">
     <div class="wrapper stack center justify-center text-center">
         <h2>Let’s Solve your Staffing</h2>
