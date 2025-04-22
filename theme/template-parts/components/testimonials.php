@@ -21,16 +21,39 @@
             </div>
             <div class="testimonial__companies cluster justify-center py-xs-s">
                 <?php
-                // Retrieve the value of a specific option
-                $company_logos = get_option('testimonial_companies_company_image');
-
-                // Display the value
-                foreach ($company_logos as $item) {
-                    # code...
-                    echo wp_get_attachment_image($item, 'medium');
-                }
-
-                ?>
+               $args = array(
+                'post_type'      => 'portfolio',
+                'posts_per_page' => 6
+                // Several more arguments could go here. Last one without a comma.
+            );
+    
+            // Query the posts:
+            $service_query = new WP_Query($args);
+    
+            //$variable = (condition) ? value_if_true : value_if_false;
+    
+    
+            // Loop through the Service:
+            while ($service_query->have_posts()) :
+                $service_query->the_post();
+                // Echo some markup
+                $portfolio_website = get_post_meta($post->ID, 'company_website', true);
+                $portfolio_logo = get_post_meta($post->ID, 'company_logo', true);
+                get_template_part(
+                    'template-parts/components/testimonial-portfolio_item',
+                    null,
+                    array(
+                        'website'        => $portfolio_website,
+                        'logo' => $portfolio_logo,
+                    )
+                );
+    
+            endwhile;
+    
+            // Reset Post Data
+            wp_reset_postdata();
+    
+            ?>
             </div>
         </div>
         <?php 
