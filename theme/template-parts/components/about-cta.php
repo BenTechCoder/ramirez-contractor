@@ -24,7 +24,7 @@
         </div>
         <div class="about-cta__content content stack bg-primary p-m-l text-light">
             <ul>
-                <li>Saving your company Time</li>
+                <li>H-2A Compliant Workers</li>
                 <li>Saving your company Money</li>
                 <li>Locally Owned and Operated</li>
             </ul>

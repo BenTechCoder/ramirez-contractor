@@ -20,3 +20,9 @@
 .hero__content {
 	z-index: 1;
 }
+
+@media screen and (max-width:theme(screens.md)) {
+	.hero {
+		background-position-x: 20%;
+	}
+}
