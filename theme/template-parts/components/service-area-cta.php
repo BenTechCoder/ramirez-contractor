@@ -21,35 +21,35 @@
                 $service_area_items = get_option('service_area_service_area_item');
 
                 // Display the value
-        $args = array(
-            'post_type'      => 'service_area',
-            'posts_per_page' => 6,
-            // Several more arguments could go here. Last one without a comma.
-        );
+                $args = array(
+                    'post_type'      => 'service_area',
+                    'posts_per_page' => 6,
+                    // Several more arguments could go here. Last one without a comma.
+                );
 
-        // Query the posts:
-        $service_area_query = new WP_Query($args);
+                // Query the posts:
+                $service_area_query = new WP_Query($args);
 
-        //$variable = (condition) ? value_if_true : value_if_false;
+                //$variable = (condition) ? value_if_true : value_if_false;
 
 
-        // Loop through the Service:
-        while ($service_area_query->have_posts()) :
-            $service_area_query->the_post();
-            // Echo some markup
-            echo '<a href="'. esc_url(get_permalink(get_the_ID())) . '"';
-            echo '<li>';
-            echo get_the_title();
-            echo '</li>';
-            echo '</a>';
-        
+                // Loop through the Service:
+                while ($service_area_query->have_posts()) :
+                    $service_area_query->the_post();
+                    // Echo some markup
+                    echo '<a href="' . esc_url(get_permalink(get_the_ID())) . '">';
+                    echo '<li>';
+                    echo get_the_title();
+                    echo '</li>';
+                    echo '</a>';
 
-        endwhile;
 
-        // Reset Post Data
-        wp_reset_postdata();
+                endwhile;
 
-        ?>
+                // Reset Post Data
+                wp_reset_postdata();
+
+                ?>
             </ul>
         </article>
         <!-- TODO: cUSTOMIZER FOR IMAGE BELOW -->
