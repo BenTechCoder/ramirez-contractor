@@ -4,6 +4,7 @@
 }
 
 .about-cta__inner > * {
+	@apply intersect:motion-preset-slide-up;
 	display: flex;
 	padding-top: var(--wp--preset--spacing--xl-2xl);
 	padding-bottom: var(--wp--preset--spacing--xl-2xl);

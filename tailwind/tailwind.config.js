@@ -55,6 +55,9 @@ module.exports = {
 		preflight: includePreflight,
 	},
 	plugins: [
+		// Add Animations with Rombo
+		require('tailwindcss-motion'),
+		require('tailwindcss-intersect'), 
 		// Add Tailwind Typography (via _tw fork).
 		require('@_tw/typography'),
 

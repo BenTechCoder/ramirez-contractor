@@ -29,7 +29,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="testimonial-pattern">
-		<div class="wrapper prose py-l-xl bg-light bg-opacity-50">
+		<div class="wrapper prose py-l-xl bg-light bg-opacity-50" data-wrapper="content">
 			<?php
 			the_content();
 			?>

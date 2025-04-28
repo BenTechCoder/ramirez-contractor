@@ -15,6 +15,7 @@
 }
 
 [data-wrapper="content"] {
+	@apply intersect:motion-preset-fade-lg;
 	width: 90vw;
 	width: clamp(10rem, 80vw, 90rem);
 	margin-left: auto;
@@ -24,5 +25,5 @@
 }
 
 [data-wrapper="content"] * {
-	max-width: 80ch;
+	@apply intersect:motion-preset-slide-up;
 }

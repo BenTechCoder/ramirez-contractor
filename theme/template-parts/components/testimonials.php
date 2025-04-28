@@ -10,7 +10,7 @@
 
 ?>
 
-<section class="testimonial-pattern testimonials py-xl-2xl">
+<section class="testimonial-pattern testimonials py-xl-2xl intersect:motion-preset-slide-left">
     <div class="wrapper stack bg-light bg-opacity-50">
 
         <div class="switcher">

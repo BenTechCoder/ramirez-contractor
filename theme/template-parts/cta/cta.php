@@ -10,7 +10,7 @@
 
 ?>
 
-<section class="cta cta-pattern bg-secondary py-xl-2xl">
+<section class="cta cta-pattern bg-secondary py-xl-2xl intersect:motion-preset-fade-lg">
     <div class="wrapper stack center justify-center text-center">
         <h2>Let’s Solve your Staffing</h2>
         <p>Send us a Message and let us find the perfect people for your needs </p>
