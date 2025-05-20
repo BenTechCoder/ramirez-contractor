@@ -39,7 +39,7 @@
 		} ?>
 	</header><!-- .entry-header -->
 
-	<div class="wrapper prose my-l-xl <?php echo (is_page('Service Area') ? 'switcher items-center' : '') ?>">
+	<div class="wrapper my-l-xl prose <?php echo (is_page('Service Area') ? 'switcher items-center' : '') ?>" data-wrapper="content">
 		<?php
 		the_content();
 		?>

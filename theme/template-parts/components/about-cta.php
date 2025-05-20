@@ -19,12 +19,12 @@
                 </h2>
             </div>
         </div>
-        <div class="about-cta__divider">
+        <div class="about-cta__divider>
             <?php get_template_part("template-parts/assets/about-cta-divider"); ?>
         </div>
         <div class="about-cta__content content stack bg-primary p-m-l text-light">
-            <ul>
-                <li>Saving your company Time</li>
+            <ul class="intersect:motion-preset-fade-lg">
+                <li>H-2A Compliant Workers</li>
                 <li>Saving your company Money</li>
                 <li>Locally Owned and Operated</li>
             </ul>

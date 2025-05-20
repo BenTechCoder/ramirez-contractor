@@ -9,6 +9,10 @@
  * https://esbuild.github.io/
  */
 
+import { Observer } from 'tailwindcss-intersect';
+ 
+Observer.start();
+
 import BurgerMenu from './components/nav';
 
 if ('customElements' in window) {
