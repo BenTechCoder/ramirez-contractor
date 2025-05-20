@@ -99,8 +99,9 @@ hr {
 
 /* Base interactive elements */
 
-a {
+a:not(.btn) {
 	color: currentcolor;
+	text-decoration: underline;
 	text-decoration-thickness: 0.08em;
 }
 
