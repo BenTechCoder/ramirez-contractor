@@ -16,6 +16,8 @@
 	filter: brightness(0.4);
 	object-fit: cover;
 }
+<<<<<<< HEAD
+=======
 
 .hero__content {
 	z-index: 1;
@@ -26,3 +28,4 @@
 		background-position-x: 20%;
 	}
 }
+>>>>>>> f97941ba48fab1d52ae7770121e50de0d1bdd04c
