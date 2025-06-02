@@ -10,7 +10,7 @@
 
 ?>
 
-<section class="cta cta-pattern bg-tertiary py-xl-2xl">
+<section class="cta cta-pattern bg-tertiary py-xl-2xl intersect:motion-preset-fade-lg">
     <div class="wrapper switcher items-center justify-center" style="--switcher-space: var(--wp--preset--spacing--xl)">
         <div class="stack">
             <h2>Skilled Industrial Labor on Demand.</h2>

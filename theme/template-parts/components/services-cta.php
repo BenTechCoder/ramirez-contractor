@@ -1,4 +1,4 @@
-<section class="stack py-s-m">
+<section class="stack py-s-m intersect:motion-preset-slide-right">
     <div class="wrapper stack center text-center" style="--space: var(--wp--preset--spacing--s)">
         <p class="text-primary">Services</p>
         <h2>Finding the right people for your mission</h2>

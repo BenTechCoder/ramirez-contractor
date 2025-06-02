@@ -10,7 +10,6 @@
 
 ?>
 
-<!-- TODO: iMAGE DECIDED FROM CUSTOMIZER and default value -->
 
 <section class="hero m-0 w-full bg-cover p-0 py-xl-2xl" style="background-image:url(<?php echo get_parent_theme_file_uri("/assets/images/man-working-steel-fatory-equipment-steel-production-darker.webp") ?>);">
     <div class="wrapper">

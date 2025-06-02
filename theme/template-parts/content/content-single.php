@@ -13,7 +13,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<header class="hero bg-dark" data-hero="grid-background">
-		<div class="hero__content wrapper stack center py-xl-2xl text-center <?php echo (has_post_thumbnail() ? 'text-light' : 'text-dark') ?>">
+		<div class="hero__content wrapper stack center py-xl-2xl text-center text-light">
 			<?php the_title('<h1 class="hero__title">', '</h1>'); ?>
 			<?php
 			if (has_excerpt()) {
@@ -29,7 +29,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="testimonial-pattern">
-		<div class="wrapper prose py-l-xl bg-light bg-opacity-50">
+		<div class="wrapper prose py-l-xl bg-light bg-opacity-50" data-wrapper="content">
 			<?php
 			the_content();
 			?>
