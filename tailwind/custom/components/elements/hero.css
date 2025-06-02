@@ -16,7 +16,3 @@
 	filter: brightness(0.4);
 	object-fit: cover;
 }
-
-.hero__content {
-	z-index: 1;
-}
