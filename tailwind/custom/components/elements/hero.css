@@ -12,7 +12,7 @@
 [data-hero="grid-background"] img {
 	height: 100%;
 	width: 100%;
-	z-index: 0;
+	z-index: -1;
 	filter: brightness(0.4);
 	object-fit: cover;
 }
